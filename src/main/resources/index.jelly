@@ -1,0 +1,6 @@
+<?jelly escape-by-default='true'?>
+<div>
+  Adds project filters to Bitbucket Branch Source plugin.
+  Useful when using Bitbucket Team/Project jobs.
+  Will auto-discover only the repositories belonging to the filtered projects.
+</div>
