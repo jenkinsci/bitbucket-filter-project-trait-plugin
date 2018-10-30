@@ -40,9 +40,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/bitbucket-filter-project-trait.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/bitbucket-filter-project-trait.git</developerConnection>
-        <url>https://github.com/jenkinsci/bitbucket-filter-project-trait</url>
+        <connection>scm:git:git://github.com/jenkinsci/bitbucket-filter-project-trait-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/bitbucket-filter-project-trait-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/bitbucket-filter-project-trait-plugin</url>
         <tag>${scmTag}</tag>
     </scm>
 
