@@ -18,7 +18,7 @@
         <changelist>-SNAPSHOT</changelist>
         <jenkins.version>2.7.3</jenkins.version>
         <java.level>8</java.level>
-        <bitbucket-branch-source.version>746.v350d2781c184</bitbucket-branch-source.version>
+        <bitbucket-branch-source.version>887.va_d359b_3d2d8d</bitbucket-branch-source.version>
     </properties>
 
     <name>Bitbucket Filter Project Trait</name>
