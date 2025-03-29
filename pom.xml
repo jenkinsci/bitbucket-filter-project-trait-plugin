@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>3.17</version>
+        <version>4.88</version>
         <relativePath />
     </parent>
 
@@ -16,8 +16,9 @@
     <properties>
         <revision>1.0</revision>
         <changelist>-SNAPSHOT</changelist>
-        <jenkins.version>2.7.3</jenkins.version>
-        <java.level>8</java.level>
+        <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
+        <jenkins.baseline>2.462</jenkins.baseline>
+        <jenkins.version>${jenkins.baseline}.3</jenkins.version>
         <bitbucket-branch-source.version>746.v350d2781c184</bitbucket-branch-source.version>
     </properties>
 
@@ -32,26 +33,29 @@
         </license>
     </licenses>
 
-    <developers>
-        <developer>
-            <id>michelzanini</id>
-            <name>Michel Zanini</name>
-        </developer>
-    </developers>
-
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/bitbucket-filter-project-trait-plugin.git</connection>
+        <connection>scm:git:https://github.com/jenkinsci/bitbucket-filter-project-trait-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/bitbucket-filter-project-trait-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/bitbucket-filter-project-trait-plugin</url>
         <tag>${scmTag}</tag>
     </scm>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.jenkins.tools.bom</groupId>
+        <artifactId>bom-${jenkins.baseline}.x</artifactId>
+        <version>4228.v0a_71308d905b_</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
     <dependencies>
 
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>cloudbees-bitbucket-branch-source</artifactId>
-            <version>${bitbucket-branch-source.version}</version>
         </dependency>
 
         <dependency>
